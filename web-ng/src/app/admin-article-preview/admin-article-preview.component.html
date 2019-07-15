@@ -1,0 +1,14 @@
+<div class="admin-articles-preview">
+	<div class="container">
+		<h2 class="title">{{article.title}} </h2>
+		<span class="tags" *ngFor="let tag of article.tags.split(',')">
+			<span class="tag">{{tag}}</span>
+		</span>
+		<p class="description">{{article.description}}</p>
+		<a class="description" href="{{article.link}}" target="_blank">Link</a>
+	</div>
+	<div class="action-buttons">
+		<button class="btn-edit" (click)="edit()">Edit</button>
+		<button class="btn-delete" (click)="delete()">Delete</button>
+	</div>
+</div>

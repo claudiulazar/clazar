@@ -1,0 +1,50 @@
+.admin-articles-preview {
+  width: 300px;
+  height: 340px;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  h2 {
+    padding: 10px;
+    margin: 0;
+  }
+  .tags {
+    top: 5px;
+    right: 5px;
+    display: inline-flex;
+
+    .tag {
+      border-radius: 10px;
+      background: #1c1c1c;
+      color: white;
+      padding: 5px 8px;
+      font-size: 13px;
+      margin: 4px 5px;
+    }
+  }
+  .container {
+    padding: 10px;
+  }
+    .action-buttons {
+      position: absolute;
+      bottom: 0;
+      display: inline-flex;
+      width: 100%;
+      button {
+        width: 50%;
+        height: 40px;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      .btn-edit {
+        background: #2bc636;
+      }
+
+      .btn-delete {
+        background: #ce1126;
+      }
+      button:hover {
+      }
+    }
+}

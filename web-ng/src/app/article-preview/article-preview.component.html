@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="container-link" routerLink="/work/project/code">
+		<h2 class="title">{{article.title}} </h2>
+		<span class="tags" *ngFor="let tag of article.tags.split(',')">
+			<span class="tag">{{tag}}</span>
+		</span>
+		<img class="btn-navigate" src="../../assets/next.svg">
+		<p class="description">{{article.description}}</p>
+		<p class="description" *ngFor="let tag of article.tags.split(',')">{{tag}}</p>
+	</div>
+</div>

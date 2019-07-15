@@ -1,0 +1,16 @@
+<div class="login">
+	<div class="container">
+		<div *ngIf="error">
+			<h2>Error logging in.</h2>
+		</div>
+		<form>
+			<input class="login__item" type="email" placeholder="Email" id="email" name="email" [(ngModel)]="email">
+			<br/>
+			<input class="login__item" type="password" placeholder="Password" id="password" name="password" [(ngModel)]="password">
+			<br/>
+			<div class="container" (click)="login()">
+				<div class="login-img"><img src="../../assets/login.svg"></div>
+			</div>
+		</form>
+	</div>
+</div>

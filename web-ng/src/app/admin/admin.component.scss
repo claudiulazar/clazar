@@ -1,0 +1,61 @@
+.admin-panel {
+  display: inline-flex;
+  .side-menu {
+    position: fixed;
+    width: 200px;
+    left: 0;
+    height: 100vh;
+    background: #1c1c1c;
+
+    li {
+      color: white;
+      padding: 15px 10px;
+      font-size: 17px;
+    }
+
+    .home, .projects, .articles, .logout {
+      position: relative;
+    }
+
+    .home:after {
+      background: url("../../assets/home.svg") no-repeat;
+    }
+
+    .projects:after {
+      background: url("../../assets/laptop.svg") no-repeat;
+    }
+
+    .articles:after {
+      background: url("../../assets/article.svg") no-repeat;
+    }
+
+    .logout:after {
+      background: url("../../assets/logout.svg") no-repeat;
+    }
+
+    .home:after, .projects:after, .articles:after, .logout:after {
+      content: '';
+      background-size: contain;
+      height: 24px;
+      width: 30px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    li:hover {
+      background: white;
+      color: #1c1c1c;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    margin-left: 300px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+}

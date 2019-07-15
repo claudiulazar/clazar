@@ -1,0 +1,66 @@
+.about-component {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.33),
+                  rgba(0, 0, 0, 0.33)
+  ),
+  url('https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  cursor: default;
+
+  .overlay-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.49);
+  }
+  .about-container {
+    margin: auto;
+    z-index: 9999;
+  }
+
+  .profile-image {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    -webkit-filter: none;
+    margin-bottom: 25px;
+  }
+
+  .description, .follow-me {
+    line-height: 20px;
+    color: white;
+    font-size: 14px;
+    padding: 0 25px;
+  }
+
+  .follow-me {
+    margin-top: 20px;
+    a {
+      color: #add8e6;
+    }
+  }
+
+  .contact {
+    display: inline-flex;
+  }
+
+  .contact-icon {
+    padding: 10px;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .email, .phone {
+    margin: 30px;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50%;
+  }
+}

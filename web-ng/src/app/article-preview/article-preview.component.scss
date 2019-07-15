@@ -1,0 +1,28 @@
+.container-link {
+  text-align: left;
+
+  .title {
+    color: #1c1c1c;
+    margin-top: 0;
+  }
+
+  .author {
+    font-size: 14px;
+    color: #ce1126;
+  }
+
+  .tags {
+    top: 5px;
+    right: 5px;
+    display: inline-flex;
+
+    .tag {
+      border-radius: 10px;
+      background: #1c1c1c;
+      color: white;
+      padding: 5px 8px;
+      font-size: 13px;
+      margin: 4px 5px;
+    }
+  }
+}

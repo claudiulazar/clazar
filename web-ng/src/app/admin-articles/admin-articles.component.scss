@@ -1,0 +1,51 @@
+.admin-articles {
+  .new-article {
+    width: 300px;
+    height: 140px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    cursor: pointer;
+
+    .add-new {
+      margin: auto;
+      text-align: center;
+      height: 50px;
+      width: 50px;
+      font-size: 40px;
+      color: #1c1c1c;
+      border-radius: 50%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  .new-article:hover {
+    .add-new {
+      transform: scale(1.4);
+      transition: 1s;
+    }
+  }
+
+  .active {
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    input{
+      width: 300px;
+      text-align: left;
+      height: 30px;
+      font-size: 14px;
+      padding: 10px;
+      border: none;
+    }
+    button {
+      width: 320px;
+      text-align: center;
+      font-size: 20px;
+      padding: 20px;
+      background: #1c1c1c;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}

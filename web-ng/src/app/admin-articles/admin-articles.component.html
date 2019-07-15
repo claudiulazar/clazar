@@ -1,0 +1,23 @@
+<div class="admin-articles">
+	<h1>Articles</h1>
+	<div class="new-article" [ngClass]="addingNew || editMode? 'active' : ''" (click)="addingNew=true">
+		<span class="add-new" *ngIf="!addingNew && !editMode">+</span>
+		<div class="" *ngIf="addingNew || editMode">
+			<input [(ngModel)]="newArticle.title" type="text" placeholder="Title">
+			<br/>
+			<input [(ngModel)]="newArticle.description" type="text" placeholder="Description">
+			<br/>
+			<input [(ngModel)]="newArticle.link" type="text" placeholder="Link">
+			<br/>
+			<input [(ngModel)]="newArticle.tags" type="text" placeholder="Tags">
+			<br/>
+			<button (click)="createNewArticle()" *ngIf="!editMode">Add</button>
+			<button (click)="updateArticle()" *ngIf="editMode">Update</button>
+		</div>
+	</div>
+	<div class="articles-container" *ngFor="let article of articles">
+		<app-admin-article-preview [article]="article" (edit)="editArticle($event)" (delete)="deleteArticle($event)"></app-admin-article-preview>
+	</div>
+
+
+</div>

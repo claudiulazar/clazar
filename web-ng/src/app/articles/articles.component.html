@@ -1,0 +1,7 @@
+<div class="work-component">
+	<span class="number-projects">Number of projects: 42</span>
+	<img class="btn-back" src="../../assets/next.svg" routerLink="/">
+	<div class="container" *ngFor="let article of articles">
+		<app-article-preview [article]="article.payload.doc.data()"></app-article-preview>
+	</div>
+</div>

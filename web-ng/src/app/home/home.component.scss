@@ -1,0 +1,27 @@
+.home-page {
+  width: 100%;
+  height: 100vh;
+  background: gray; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, white, black);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, white, black);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+.container {
+  text-align: center;
+  margin: auto;
+  height: 80vh;
+  width: 70vw;
+  display: flex;
+}
+
+.about-side, .categories-side {
+  width: 50%;
+  height: 100%;
+  background: #ffffff;
+}
